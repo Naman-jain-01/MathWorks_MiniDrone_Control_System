@@ -200,7 +200,7 @@ This project demonstrates the integration of image processing and path planning 
 ### **References and Citations**
 
 - **MathWorks Documentation**: [Link to official MATLAB/Simulink documentation](https://in.mathworks.com/content/dam/mathworks/mathworks-dot-com/academia/student-competitions/minidrone-competition/mathworks-minidrone-competition-guidelines.pdf)  
-- **Related Research Paper**: [Research on Image Processing for Drones](https://github.com/Naman-jain-01/raw/MathWorks_MiniDrone_Control_System/blob/main/CEPPI-THESIS-2020.pdf)
+- **Related Research Paper**: [Research on Image Processing for Drones](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/raw/main/CEPPI-THESIS-2020.pdf)
 
 ---
 
