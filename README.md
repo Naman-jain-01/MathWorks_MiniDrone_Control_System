@@ -32,24 +32,32 @@ This repository contains a **line follower algorithm** designed for the **Parrot
 - **Hough Line Transform** to extract straight lines.
 - **Line Selection** to choose prominent lines representing the red line.
 - **Heading Calculation** using the average of these lines.
-![image](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Screenshot%202024-09-10%20011150.png)
+![image](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Snapshots/Screenshot%202024-09-10%20011150.png)
+
+---
 
 #### **2. Bitmap-based Approach for Heading Adjustment**
 - Define **Regions of Interest (ROIs)** in the camera feed.
 - **Bitmap Intersection Analysis** to refine the drone's heading using the red line.
 - **X-mark Generation** for more accurate trajectory stabilization.
-![image](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Screenshot%202024-09-10%20011156.png)
+![image](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Snapshots/Screenshot%202024-09-10%20011156.png)
+
+---
 
 ![image](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Untitled%20video%20-%20Made%20with%20Clipchamp.gif)
+
+---
 
 #### **Landing Feature**
 - **Circle Detection** using MATLAB’s `imfindcircles()` function.
 - **Landing Decision** based on ROI detection.
-![image](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Screenshot%202024-09-10%20011206.png)
+![image](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Snapshots/Screenshot%202024-09-10%20011206.png)
 
 
 ---
-#### Image Processing and Path Planning for Region of Interest
+## Image Processing and Path Planning for Region of Interest
+
+---
 
 #### **1. Introduction**
 This project combines real-time **image processing** with advanced **path planning** algorithms to guide an autonomous system. The system detects objects, processes visual data, adjusts its path dynamically, and avoids obstacles, all while maintaining a safe and efficient route.
@@ -186,7 +194,7 @@ Special thanks to **MathWorks** for organizing the event and giving us a platfor
 
 ### **Snapshots and Video Demonstration**
 
-[![](#image-of-path)](![image](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Screenshot%202024-09-10%20010021.png)
+[![](#image-of-path)](![image](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Snapshots/Screenshot%202024-09-10%20010021.png)
 )  
 *UI of Simulation*
 
