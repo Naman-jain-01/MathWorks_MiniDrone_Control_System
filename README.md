@@ -62,6 +62,8 @@ This repository contains a **line follower algorithm** designed for the **Parrot
 #### **1. Introduction**
 This project combines real-time **image processing** with advanced **path planning** algorithms to guide an autonomous system. The system detects objects, processes visual data, adjusts its path dynamically, and avoids obstacles, all while maintaining a safe and efficient route.
 
+[[image]](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Snapshots/Screenshot%202024-09-10%20022123.png)
+
 ---
 
 ### **2. Image Processing for Region of Interest (ROI)**
@@ -71,6 +73,7 @@ The system receives several key inputs for image processing:
    - **Centroid**: The center point of the detected object or path.
    - **Centroid\_blk**: The centroid of the black region, often used for boundary detection.
    - **Other Parameters**: Including area, angle, and path history, which contribute to path planning and adjustments.
+
 
 #### **2.2. Path Distance Calculation**
    - The system calculates the distance between the current path and a reference point (typically `[80, 60]`).
@@ -86,13 +89,17 @@ The system receives several key inputs for image processing:
    - The algorithm defines an ROI around the path using left and right boundary points (`roicord\_l` and `roicord\_r`).
    - Trigonometric functions are used to calculate these boundaries, ensuring that the object remains centered within the frame.
 
+
 #### **2.5. Black Region Detection**
    - **Black Region Boundaries**: Additional boundaries (`blackcord\_l`, `blackcord\_r`) are calculated to detect black regions, often representing obstacles or path edges.
    - An angular shift of `+π` is applied to compute the opposite boundaries of these regions.
 
+
 ---
 
 ### **3. Path Planning Algorithm**
+
+[[image]](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Snapshots/Screenshot%202024-09-10%20020336.png)
 
 #### **3.1. Dynamic Speed Adjustment**
    - The system uses path distance calculations to adjust the speed of the object. As the distance between the object and the path changes, the speed dynamically adapts to ensure smooth navigation.
@@ -125,6 +132,9 @@ The system receives several key inputs for image processing:
    - The **Landing Logic Block** uses control theory principles and trajectory algorithms to ensure accurate path corrections, guiding the object to its destination or landing point.
 
 #### **4.3. Path Planning Subsystem**
+
+[[image]](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Snapshots/Screenshot%202024-09-10%20022155.png)
+
    - The subsystem processes incoming data and generates reference commands to adjust the object's movement.
    - Key components include:
      - **Filter Block**: Smoothens incoming signals to reduce noise and ensure stable path corrections.
