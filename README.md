@@ -49,9 +49,7 @@ This repository contains a **line follower algorithm** designed for the **Parrot
 
 
 ---
-####  **Image Processing and Path Planning for Region of Interest**
-
----
+#### Image Processing and Path Planning for Region of Interest
 
 #### **1. Introduction**
 This project combines real-time **image processing** with advanced **path planning** algorithms to guide an autonomous system. The system detects objects, processes visual data, adjusts its path dynamically, and avoids obstacles, all while maintaining a safe and efficient route.
