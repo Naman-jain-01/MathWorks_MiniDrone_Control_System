@@ -41,6 +41,8 @@ This repository contains a **line follower algorithm** designed for the **Parrot
 - Define **Regions of Interest (ROIs)** in the camera feed.
 - **Bitmap Intersection Analysis** to refine the drone's heading using the red line.
 - **X-mark Generation** for more accurate trajectory stabilization.
+![image](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Screenshot%202024-09-10%20011156.png)
+
 ![image](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Untitled%20video%20-%20Made%20with%20Clipchamp.gif)
 
 #### **Landing Feature**
