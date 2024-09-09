@@ -1,0 +1,36 @@
+flightControlSystem_sfun.obj
+c5_flightControlSystem.obj
+c6_flightControlSystem.obj
+flightControlSystem_sfun_registry.obj
+half_type.obj
+
+
+"C:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64\libmwedgesobelprewitt_tbb.lib" 
+"C:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64\libmwedgethinning_tbb.lib" 
+"C:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64\libmwgrayto8.lib" 
+"-LC:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64" "-llibmwippfilter" 
+"C:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64\libmwmorphop_binary_tbb.lib" 
+"C:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64\libmwrgb2gray_tbb.lib" 
+"C:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64\libmwgetnumcores.lib" 
+"C:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64\libmwimfilter.lib" 
+"C:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64\libmwimregionalmax.lib" 
+"C:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64\libmwordfilt2.lib" 
+"-LC:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64" "-llibmwippreconstruct"
+"C:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64\sf_runtime.lib" 
+"C:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64\libmx.lib" 
+"C:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64\libmex.lib" 
+"C:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64\libmat.lib" 
+"C:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64\libfixedpoint.lib" 
+"C:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64\libut.lib" 
+"C:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64\libmwstringutil.lib" 
+"C:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64\libmwmathutil.lib" 
+"C:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64\libemlrt.lib" 
+"C:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64\libmwsl_log_load_blocks.lib" 
+"C:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64\libmwsimulink.lib" 
+"C:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64\libmwsl_sfcn_cov_bridge.lib" 
+"C:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64\libcovrt.lib" 
+"C:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64\libmwsl_simtarget_core.lib" 
+"C:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64\libmwsl_simtarget_instrumentation.lib" 
+"C:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64\libmwslexec_simlog.lib" 
+"C:\Program Files\MATLAB\R2024a\extern\lib\win64\mingw64\libmwslccrt.lib"
+
