@@ -24,6 +24,9 @@ This repository contains a **line follower algorithm** designed for the **Parrot
 ### Video Demonstration
 
 [Watch the video on Google Drive](https://drive.google.com/file/d/1oqsha61gUzGygEiQRGJikwqs8xbmVV3E/view?usp=sharing)
+### Video Demonstration
+
+![Simulation Demo](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/3fa8751a-a785-41a9-8567-53c4f4ddd4ac.gif)
 
 ![image](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Screenshot%202024-09-10%20010021.png)
 
