@@ -133,7 +133,7 @@ The system receives several key inputs for image processing:
 
 #### **4.3. Path Planning Subsystem**
 
-[[image]](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Snapshots/Screenshot%202024-09-10%20022155.png)
+![image](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Snapshots/Screenshot%202024-09-10%20022155.png)
 
    - The subsystem processes incoming data and generates reference commands to adjust the object's movement.
    - Key components include:
