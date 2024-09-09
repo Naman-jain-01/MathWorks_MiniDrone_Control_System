@@ -143,8 +143,21 @@ The system receives several key inputs for image processing:
 
 ---
 
-### **5. Conclusion**
-This project demonstrates the integration of image processing and path planning to create a robust autonomous system. By detecting and analyzing visual data in real-time, the system dynamically adjusts its path, avoids obstacles, and navigates efficiently towards its destination.
+
+
+### **Challenges Faced & Improvements**
+
+#### **1. Handling Sharp Turns**  
+The algorithm struggled with turns less than 60 degrees, causing the drone to overshoot.
+
+**Improvement Suggestion**:  
+Implementing a path prediction mechanism and adjusting speed dynamically during turns.
+
+#### **2. Inefficient Circle Detection for Landing**  
+Premature landing or missing the landing circle was common due to speed miscalculations.
+
+**Improvement Suggestion**:  
+Developing a dynamic ROI based on speed and trajectory would provide smoother landing decisions.
 
 ---
 
@@ -153,6 +166,11 @@ This project demonstrates the integration of image processing and path planning 
 - Dynamic speed adjustment for smooth navigation
 - Obstacle detection and avoidance through black region analysis
 - Robust path planning algorithm using MATLAB functions for dynamic decision-making
+
+---
+
+### **5. Conclusion**
+This project demonstrates the integration of image processing and path planning to create a robust autonomous system. By detecting and analyzing visual data in real-time, the system dynamically adjusts its path, avoids obstacles, and navigates efficiently towards its destination.
 
 ---
 
@@ -178,39 +196,6 @@ This project demonstrates the integration of image processing and path planning 
 
 ---
 
-### **Challenges Faced & Improvements**
-
-#### **1. Handling Sharp Turns**  
-The algorithm struggled with turns less than 60 degrees, causing the drone to overshoot.
-
-**Improvement Suggestion**:  
-Implementing a path prediction mechanism and adjusting speed dynamically during turns.
-
-#### **2. Inefficient Circle Detection for Landing**  
-Premature landing or missing the landing circle was common due to speed miscalculations.
-
-**Improvement Suggestion**:  
-Developing a dynamic ROI based on speed and trajectory would provide smoother landing decisions.
-
----
-
-### **Experience and Acknowledgments**
-
-Participating in the **MathWorks Mini Drone Competition** has been an exciting and challenging experience. Our team had the opportunity to work with cutting-edge image processing and control algorithms, learning to overcome challenges like sharp turns and efficient landings. The competition allowed us to collaborate, apply our technical knowledge, and expand our problem-solving skills.
-
-Special thanks to **MathWorks** for organizing the event and giving us a platform to showcase our abilities. We also appreciate the support from our peers and mentors throughout the competition.
-
----
-
-### **Snapshots and Video Demonstration**
-
-[![](#image-of-path)](![image](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Snapshots/Screenshot%202024-09-10%20010021.png)
-)  
-*UI of Simulation*
-
-
-
----
 
 ### **References and Citations**
 
@@ -221,10 +206,13 @@ Special thanks to **MathWorks** for organizing the event and giving us a platfor
 
 By following this structure, you'll make your README visually appealing with snapshots and videos, share your technical process, challenges, and personal experience, and ensure that all necessary information is provided for anyone looking to replicate or learn from your project.
 
-Let me know if you'd like assistance with formatting or any specific section further!
+### **Experience and Acknowledgments**
 
+Participating in the **MathWorks Mini Drone Competition** has been an exciting and challenging experience. Our team had the opportunity to work with cutting-edge image processing and control algorithms, learning to overcome challenges like sharp turns and efficient landings. The competition allowed us to collaborate, apply our technical knowledge, and expand our problem-solving skills.
 
-Welcome to the Mini Drone Competition! Follow the instructions below to set up and run the simulation in MATLAB.
+Special thanks to **MathWorks** for organizing the event and giving us a platform to showcase our abilities. We also appreciate the support from our peers and mentors throughout the competition.
+
+---
 
 ## Setup Instructions
 
@@ -246,5 +234,6 @@ Welcome to the Mini Drone Competition! Follow the instructions below to set up a
 ## Notes
 
 - Ensure that you have the necessary MATLAB toolboxes installed for running the simulation which includes
-- ![image](https://github.com/user-attachments/assets/d11f9bcb-e0e1-4ff0-a8c1-55adb891c6af)
+
+![image](https://github.com/user-attachments/assets/d11f9bcb-e0e1-4ff0-a8c1-55adb891c6af)
 - If you encounter any issues, refer to the documentation or contact the support team for assistance.
