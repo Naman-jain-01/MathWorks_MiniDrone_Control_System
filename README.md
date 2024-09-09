@@ -1,6 +1,3 @@
-To create an attractive and comprehensive README for your MathWorks Mini Drone Competition project, here's a well-structured approach that incorporates your algorithm description, challenges, usage instructions, images, videos, and your personal experience. You can then use markdown (.md) format to create it. Below is an enhanced version of your README.
-
----
 
 # **Line Follower Algorithm for Parrot Mini Drone**
 
