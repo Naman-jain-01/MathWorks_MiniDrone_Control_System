@@ -62,7 +62,7 @@ This repository contains a **line follower algorithm** designed for the **Parrot
 #### **1. Introduction**
 This project combines real-time **image processing** with advanced **path planning** algorithms to guide an autonomous system. The system detects objects, processes visual data, adjusts its path dynamically, and avoids obstacles, all while maintaining a safe and efficient route.
 
-[[image]](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Snapshots/Screenshot%202024-09-10%20022123.png)
+![image](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Snapshots/Screenshot%202024-09-10%20022123.png)
 
 ---
 
@@ -99,7 +99,7 @@ The system receives several key inputs for image processing:
 
 ### **3. Path Planning Algorithm**
 
-[[image]](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Snapshots/Screenshot%202024-09-10%20020336.png)
+![image](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Snapshots/Screenshot%202024-09-10%20020336.png)
 
 #### **3.1. Dynamic Speed Adjustment**
    - The system uses path distance calculations to adjust the speed of the object. As the distance between the object and the path changes, the speed dynamically adapts to ensure smooth navigation.
