@@ -49,7 +49,7 @@ This repository contains a **line follower algorithm** designed for the **Parrot
 
 
 ---
-### **Image Processing and Path Planning for Region of Interest**
+####  **Image Processing and Path Planning for Region of Interest**
 
 ---
 
