@@ -1,6 +1,3 @@
-To create an attractive and comprehensive README for your MathWorks Mini Drone Competition project, here's a well-structured approach that incorporates your algorithm description, challenges, usage instructions, images, videos, and your personal experience. You can then use markdown (.md) format to create it. Below is an enhanced version of your README.
-
----
 
 # **Line Follower Algorithm for Parrot Mini Drone**
 
@@ -35,19 +32,109 @@ This repository contains a **line follower algorithm** designed for the **Parrot
 - **Hough Line Transform** to extract straight lines.
 - **Line Selection** to choose prominent lines representing the red line.
 - **Heading Calculation** using the average of these lines.
-- ![image](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Screenshot%202024-09-10%20011150.png)
+![image](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Screenshot%202024-09-10%20011150.png)
 
 #### **2. Bitmap-based Approach for Heading Adjustment**
 - Define **Regions of Interest (ROIs)** in the camera feed.
 - **Bitmap Intersection Analysis** to refine the drone's heading using the red line.
 - **X-mark Generation** for more accurate trajectory stabilization.
-- ![image](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Screenshot%202024-09-10%20011156.png)
+![image](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Screenshot%202024-09-10%20011156.png)
+
+![image](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Untitled%20video%20-%20Made%20with%20Clipchamp.gif)
 
 #### **Landing Feature**
 - **Circle Detection** using MATLAB’s `imfindcircles()` function.
 - **Landing Decision** based on ROI detection.
-- - ![image](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Screenshot%202024-09-10%20011206.png)
+![image](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Screenshot%202024-09-10%20011206.png)
 
+
+---
+#### Image Processing and Path Planning for Region of Interest
+
+#### **1. Introduction**
+This project combines real-time **image processing** with advanced **path planning** algorithms to guide an autonomous system. The system detects objects, processes visual data, adjusts its path dynamically, and avoids obstacles, all while maintaining a safe and efficient route.
+
+---
+
+### **2. Image Processing for Region of Interest (ROI)**
+
+#### **2.1. Input**
+The system receives several key inputs for image processing:
+   - **Centroid**: The center point of the detected object or path.
+   - **Centroid\_blk**: The centroid of the black region, often used for boundary detection.
+   - **Other Parameters**: Including area, angle, and path history, which contribute to path planning and adjustments.
+
+#### **2.2. Path Distance Calculation**
+   - The system calculates the distance between the current path and a reference point (typically `[80, 60]`).
+   - Using these distances (e.g., `d1`, `d2`), the system adjusts speed dynamically:
+     - **Closer**: Slows down when the object is near.
+     - **Farther**: Speeds up when the object is distant.
+
+#### **2.3. Projection and Path Correction**
+   - If the current path deviates from the intended route, the system calculates a projected point using geometric transformations.
+   - Angular deviations are measured, and corrections are applied by adjusting the **angle correction** (`anglecorr`), ensuring the object remains aligned with the path.
+
+#### **2.4. Defining the Region of Interest (ROI)**
+   - The algorithm defines an ROI around the path using left and right boundary points (`roicord\_l` and `roicord\_r`).
+   - Trigonometric functions are used to calculate these boundaries, ensuring that the object remains centered within the frame.
+
+#### **2.5. Black Region Detection**
+   - **Black Region Boundaries**: Additional boundaries (`blackcord\_l`, `blackcord\_r`) are calculated to detect black regions, often representing obstacles or path edges.
+   - An angular shift of `+π` is applied to compute the opposite boundaries of these regions.
+
+---
+
+### **3. Path Planning Algorithm**
+
+#### **3.1. Dynamic Speed Adjustment**
+   - The system uses path distance calculations to adjust the speed of the object. As the distance between the object and the path changes, the speed dynamically adapts to ensure smooth navigation.
+
+#### **3.2. Path Correction Mechanism**
+   - **Real-Time Path Correction**: The system evaluates the current path based on image data and previous path coordinates. Any deviation results in an immediate adjustment of the planned trajectory.
+   - **Angular Adjustments**: The system computes angular deviations and applies corrections to ensure that the object maintains a straight path towards the destination.
+
+#### **3.3. Obstacle Detection and Avoidance**
+   - **Black Region Detection**: The black regions detected represent potential obstacles or boundaries.
+   - The system uses this information to plan avoidance maneuvers, ensuring that the object avoids straying off course or colliding with obstacles.
+
+---
+
+### **4. Detailed Overview of the Path Planning Algorithm**
+
+#### **4.1. Key Inputs and Signals**
+
+- **Vision-Based Data**:
+   - Real-time tracking of the environment through image processing, providing X and Y coordinate increments and precise positional data.
+   - **Butterworth Filter**: A 1st order Butterworth filter with a 0.3 Hz cutoff frequency is applied to smooth out noise in the data.
+
+- **Estimated Values**:
+   - Derived from the state estimator, these values include the system's position, velocity, and acceleration in the X, Y, and Z axes.
+
+#### **4.2. MATLAB Function-Based Logic**
+   - The path planning algorithm leverages user-defined MATLAB functions for dynamic and flexible path calculations.
+   - These functions process filtered inputs and generate real-time trajectory adjustments.
+
+   - The **Landing Logic Block** uses control theory principles and trajectory algorithms to ensure accurate path corrections, guiding the object to its destination or landing point.
+
+#### **4.3. Path Planning Subsystem**
+   - The subsystem processes incoming data and generates reference commands to adjust the object's movement.
+   - Key components include:
+     - **Filter Block**: Smoothens incoming signals to reduce noise and ensure stable path corrections.
+     - **MATLAB Function Block**: Computes control actions such as speed adjustments, heading changes, and precise landing maneuvers.
+     - **UpdateReferenceCmds**: Sends corrected position reference commands to the control system.
+
+---
+
+### **5. Conclusion**
+This project demonstrates the integration of image processing and path planning to create a robust autonomous system. By detecting and analyzing visual data in real-time, the system dynamically adjusts its path, avoids obstacles, and navigates efficiently towards its destination.
+
+---
+
+#### **Key Features:**
+- Real-time ROI calculation and path correction
+- Dynamic speed adjustment for smooth navigation
+- Obstacle detection and avoidance through black region analysis
+- Robust path planning algorithm using MATLAB functions for dynamic decision-making
 
 ---
 
