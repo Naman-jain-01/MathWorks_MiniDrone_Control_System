@@ -28,7 +28,6 @@ This repository contains a **line follower algorithm** designed for the **Parrot
 
 ![Simulation Demo](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/3fa8751a-a785-41a9-8567-53c4f4ddd4ac.gif)
 
-![image](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Screenshot%202024-09-10%20010021.png)
 
 
 ---
@@ -104,10 +103,11 @@ Special thanks to **MathWorks** for organizing the event and giving us a platfor
 
 ### **Snapshots and Video Demonstration**
 
-[![](#image-of-path)](#link-to-image)  
-*Drone following the red line with live snapshots of the path*
+[![](#image-of-path)](![image](https://github.com/Naman-jain-01/MathWorks_MiniDrone_Control_System/blob/main/Screenshot%202024-09-10%20010021.png)
+)  
+*UI of Simulation*
 
-### Video Demonstration
+
 
 ---
 
